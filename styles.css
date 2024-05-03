@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px; /* Add padding to adjust spacing */
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    display: flex; /* Change to flex */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Align items vertically */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: "dancing script", sans-serif;
+    font-size: 2rem;
+    color: white;
+    width: 90vw;
+    height: 90vh;
+    background: rgb(150, 105, 105) url("bg.svg") center/cover no-repeat;
+    padding: 5%;
+}
+
+.product__image {
+    width: 30vw;
+    position: relative;
+    left: 60vw;
+    top: 10vh;
+  }
+
+/* Buy button styles */
+.buy-button-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Align
+  bottom: 3cm; /* Adjust to float above bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index:1; /* Ensure it's above other content */
+}
+
+.buy-button {
+  background-color: #4CAF50;
+  /* color: white; */
+  padding: 10px 25px; /* Adjust size */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition */
+  /* display: block; */
+  margin: 0 auto;
+}
+
+.buy-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* Hover effect */
+}
